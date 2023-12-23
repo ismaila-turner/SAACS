@@ -10,8 +10,9 @@ import {
 import { TouchableOpacity } from "react-native";
 import Icon from "react-native-vector-icons/Ionicons";
 import { Share } from "react-native";
-import { COLORS, SIZES, dummyData, FONTS } from "../constants";
+import { COLORS, SIZES, dummyData, FONTS, icons } from "../constants";
 import ItemImage from "../components/ItemImage";
+import IconeBotten from "../components/common/IconeBotten";
 
 export default function HomePage({ navigation }) {
   const [searchText, setSearchText] = useState("");
@@ -51,11 +52,17 @@ export default function HomePage({ navigation }) {
         />
         <View style={{ paddingHorizontal: SIZES.base }}>
           <Text
+            style={{ color: COLORS.success, fontWeight: "500", fontSize: 12 }}
+          >
+            {" "}
+            {item.category}
+          </Text>
+          <Text
             style={{
               fontSize: SIZES.h4,
               lineHeight: 19,
               fontWeight: "900",
-              paddingVertical: SIZES.base,
+              paddingBottom: SIZES.base,
             }}
           >
             {item.title}
@@ -63,12 +70,29 @@ export default function HomePage({ navigation }) {
           <Text
             style={{
               color: COLORS.primary,
-              paddingVertical: SIZES.base,
+              paddingTop: SIZES.base,
               fontWeight: "900",
             }}
           >
             GMD {item.price}
           </Text>
+          <Text style={{ fontSize: 11 }}>{item.date}</Text>
+          <View
+            style={{
+              display: "flex",
+              alignItems: "center",
+              flexDirection: "row",
+              gap: 10,
+            }}
+          >
+            <IconeBotten
+              icone={icons.car1}
+              iconeStyle={{
+                tintColor: COLORS.success,
+              }}
+            />
+            <Text style={{ color: COLORS.secondary }}>Free Shipping</Text>
+          </View>
         </View>
       </View>
     );
@@ -89,6 +113,10 @@ export default function HomePage({ navigation }) {
           {/* Render other menu items here */}
         </View>
       </ScrollView>
+
+      {/* categories */}
+
+      {/* items */}
       <FlatList
         data={dummyData.banners}
         keyExtractor={(item) => item.id}
@@ -107,7 +135,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "white",
-    marginRight: 10,
   },
   menuContainer: {
     flexDirection: "row",
@@ -127,12 +154,12 @@ const styles = StyleSheet.create({
     fontSize: 10,
   },
   itemContainer: {
-    // paddingHorizontal: SIZES.base,
+    paddingBottom: SIZES.base,
     marginHorizontal: SIZES.base,
     backgroundColor: COLORS.light,
     marginVertical: SIZES.base,
     borderRadius: SIZES.radius,
-    width: SIZES.width / 2,
+    width: SIZES.width / 2.2,
     backgroundColor: "white",
     shadowColor: "#000",
     overflow: "hidden",
