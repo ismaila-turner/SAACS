@@ -1,7 +1,7 @@
 import React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
-import { Register } from "../screens";
+import { Register, Product } from "../screens";
 import TabNavigation from "./TabNavigation";
 import { FONTS } from "../constants";
 
@@ -25,6 +25,13 @@ const StackNavigation = () => {
         name="Register"
         component={Register}
         options={screenOptions}
+      />
+      <Stack.Screen
+        name="Product"
+        component={Product}
+        options={{
+          title: "Product Details",
+        }}
       />
     </Stack.Navigator>
   );

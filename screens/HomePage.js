@@ -13,6 +13,7 @@ import { Share } from "react-native";
 import { COLORS, SIZES, dummyData, FONTS, icons } from "../constants";
 import ItemImage from "../components/ItemImage";
 import IconeBotten from "../components/common/IconeBotten";
+import CategorySectionHome from "../components/CategorySectionHome";
 
 export default function HomePage({ navigation }) {
   const [searchText, setSearchText] = useState("");
@@ -48,7 +49,7 @@ export default function HomePage({ navigation }) {
         <ItemImage
           ContentContainerStyle={{ height: SIZES.width / 2 }}
           image={item.image}
-          onImagePress={() => navigation.navigate("", { item })}
+          onImagePress={() => navigation.navigate("Product", { item })}
         />
         <View style={{ paddingHorizontal: SIZES.base }}>
           <Text
@@ -100,20 +101,7 @@ export default function HomePage({ navigation }) {
 
   return (
     <View style={styles.container}>
-      <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
-        <View style={styles.menuContainer}>
-          <TouchableOpacity style={styles.menuItem}>
-            <Icon name="home" size={20} color="gray" />
-            <Text style={styles.menuText}>Home</Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.menuItem} onPress={() => share()}>
-            <Icon name="ios-share" size={20} color="gray" />
-            <Text style={styles.menuText}>Share</Text>
-          </TouchableOpacity>
-          {/* Render other menu items here */}
-        </View>
-      </ScrollView>
-
+      <CategorySectionHome />
       {/* categories */}
 
       {/* items */}

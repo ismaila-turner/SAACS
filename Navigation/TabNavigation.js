@@ -3,7 +3,13 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Image } from "react-native";
 
 import { icons, COLORS } from "../constants/index";
-import { HomePage, Profile, SearchPreferences, Shopping } from "../screens";
+import {
+  HomePage,
+  Profile,
+  SearchPreferences,
+  Shopping,
+  Product,
+} from "../screens";
 import { TouchableWithoutFeedback } from "react-native-gesture-handler";
 
 const Tab = createBottomTabNavigator();
@@ -76,20 +82,12 @@ const TabNavigation = () => {
         name="Shopping"
         component={Shopping}
         options={{
-          headerShown: false,
           tabBarIcon: ({ focused }) =>
             TabIcon({
               icon: icons.shoppingCart,
               focused: focused,
-              // Onpress: () => Navigation.navigate("Home"),
             }),
-          headerStyle: {
-            backgroundColor: COLORS.primary,
-          },
-          headerTintColor: "white",
-          headerTitleAllowFontScaling: true,
-          // headerLeft: () => HeaderLeft({ icon: icons.logo }),
-          // headerRight: () => HeaderRight({ icon: icons.bell }),
+          title: "Card",
         }}
       />
       <Tab.Screen

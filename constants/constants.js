@@ -68,48 +68,37 @@ const Categories = [
   {
     id: 0,
     title: "All Category",
-    image: require("../assets/icons/appartment.png"),
+    image: require("../assets/images/dummy/luggage_01.png"),
   },
   {
     id: 1,
-    title: "Appartment",
-    image: require("../assets/icons/appartment.png"),
+    title: "Cloath",
+    image: require("../assets/images/dummy/product_04.png"),
   },
   {
     id: 2,
-    title: "Room's",
-    image: require("../assets/icons/room.png"),
+    title: "Shoe",
+    image: require("../assets/images/dummy/featured_01.png"),
   },
 
   {
     id: 3,
-    title: "Shop's",
+    title: "Bag",
 
-    image: require("../assets/icons/shop.png"),
+    image: require("../assets/images/dummy/product_01.png"),
   },
   {
     id: 4,
-    title: "Car's",
+    title: "Cream",
 
-    image: require("../assets/icons/car1.png"),
+    image: require("../assets/images/dummy/camera_01.png"),
   },
-  {
-    id: 5,
-    title: "Family",
 
-    image: require("../assets/icons/car1.png"),
-  },
-  {
-    id: 6,
-    title: "Batchelor",
-
-    image: require("../assets/icons/car1.png"),
-  },
   {
     id: 7,
-    title: "Office",
+    title: "Weg",
 
-    image: require("../assets/icons/car1.png"),
+    image: require("../assets/images/dummy/camera_02.png"),
   },
 ];
 
