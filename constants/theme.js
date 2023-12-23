@@ -11,9 +11,7 @@ export const useCustomFonts = () => {
     "Poppins-Bold": require("../assets/fonts/Poppins-Bold.ttf"),
   });
 
-  const onLayoutRootView = useCallback(async () => {
-    // Code...
-  }, [fontsLoaded]);
+  const onLayoutRootView = useCallback(async () => {}, [fontsLoaded]);
 
   return { fontsLoaded, onLayoutRootView };
 };

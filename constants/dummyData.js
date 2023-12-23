@@ -60,6 +60,73 @@ const categories = [
     // bg_color: COLORS.secondary20,
   },
 ];
+const banners = [
+  {
+    id: 1,
+    title: "Awesome mens body cream",
+    description: "Shoe in Miniacs Shop",
+    price: "Dec 24",
+    category: "Cream",
+    image: require("../assets/nekpic/mcream.jpg"),
+  },
+  {
+    id: 2,
+    title: "Nice and shiny women`s body cream",
+    description: "Stay tune and check your notif everyday",
+    price: "6 hours",
+    category: "Cream",
+    image: require("../assets/nekpic/wcream.jpg"),
+  },
+  {
+    id: 3,
+    title: "Eligable weig for all women type",
+    description: "Stay tune and check your notif everyday",
+    price: "6 hours",
+
+    category: "",
+    image: require("../assets/nekpic/wig.jpg"),
+  },
+  {
+    id: 4,
+    title: "Body Fit cloath for men`s",
+    description: "Stay tune and check your notif everyday",
+    price: "6 hours",
+    category: "Cloath",
+    image: require("../assets/nekpic/mencloth.jpg"),
+  },
+  {
+    id: 5,
+    title: "Ladies nice cloath",
+    description: "Stay tune and check your notif everyday",
+    price: "6 hours",
+    category: "Cloath",
+    image: require("../assets/nekpic/wcloth.jpg"),
+  },
+  {
+    id: 6,
+    title: "fit all sizes for mens",
+    description: "Stay tune and check your notif everyday",
+    price: "6 hours",
+    category: "Shoe",
+    image: require("../assets/nekpic/mshoejpg.jpg"),
+  },
+  {
+    id: 7,
+    title: "Diffrent Handbag for all program",
+    description: "Stay tune and check your notif everyday",
+    price: "6 hours",
+    category: "Bag",
+    image: require("../assets/nekpic/wbag.jpg"),
+  },
+  {
+    id: 8,
+    title: "Wormen Simple and work shoe",
+    description: "Stay tune and check your notif everyday",
+    price: "6 hours",
+    category: "SHoe",
+    image: require("../assets/nekpic/wshoe.jpg"),
+  },
+];
 
 // const services = [
 //   {
@@ -127,7 +194,7 @@ const categories = [
 //   {
 //     id: 1,
 //     order_no: 678765,
-//     date: "11:20AM   2018-03-12",
+//     price: "11:20AM   2018-03-12",
 //     total: "$570.00",
 //   },
 //   {
@@ -334,5 +401,6 @@ const categories = [
 
 export default {
   flashDeals,
+  banners,
   categories,
 };
