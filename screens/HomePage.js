@@ -146,21 +146,21 @@ export default function HomePage  ({navigation}) {
 
 <View style={{flexDirection:'row',   margin:5, alignSelf:'center', borderRadius:20, }} >
 <TouchableOpacity style={{backgroundColor:'white' ,borderWidth:1, borderRadius:20, borderColor:'white',elevation:10,
-   }}  onPress={()=>navigation.push('Buy House') } >
-<Image source={require('../nekpic/mencloth.jpg')} 
+   }}  onPress={()=>navigation.push('BodyCream') } >
+<Image source={require('../nekpic/bodycream.jpg')} 
        style={{ width: 142, height: 200,  alignSelf: 'center',margin:15 ,padding:2, borderRadius:10,}}/>
 
 <Text style={{ fontSize:15,   alignSelf: 'center',fontWeight:'500', color:'black'}}   >
-  Men Cloth
+ Body Cream
 </Text>
 </TouchableOpacity   >
 
 <TouchableOpacity  style={{backgroundColor:'white' ,borderWidth:1, borderRadius:20, borderColor:'white',elevation:10,
    }} onPress={()=>navigation.push('Rent House') }  >
-<Image source={require('../nekpic/wcloth.jpg')} 
+<Image source={require('../nekpic/scrub.jpg')} 
        style={{ width: 142, height: 200,  alignSelf: 'center',margin:15 ,padding:2, borderRadius:10,}}/>
 <Text style={{ fontSize:15,   alignSelf: 'center',fontWeight:'500', color:'black'}}   >
- Women Cloth
+Body Scrub
 </Text>
 
 
@@ -175,19 +175,19 @@ export default function HomePage  ({navigation}) {
 <View style={{flexDirection:'row',  margin:5,  alignSelf:'center', borderRadius:20, }} >
 <TouchableOpacity style={{backgroundColor:'white' ,borderWidth:1, borderRadius:20, borderColor:'white',elevation:10,
    }}  onPress={()=>navigation.push('Rent Apartment') }>
-<Image source={require('../nekpic/mshoejpg.jpg')} 
+<Image source={require('../nekpic/serum.jpg')} 
        style={{ width: 142, height: 200,  alignSelf: 'center',margin:15 ,padding:2, borderRadius:10,}}/>
 <Text style={{ fontSize:15,   alignSelf: 'center',fontWeight:'500', color:'black'}}   >
-Men Shoe
+Serum
 </Text>
 </TouchableOpacity   >
 
 <TouchableOpacity  style={{backgroundColor:'white' ,borderWidth:1, borderRadius:20, borderColor:'white',elevation:10,
    }}    onPress={()=>navigation.push('Buy a Land') }  >
-<Image source={require('../nekpic/wshoe.jpg')} 
+<Image source={require('../nekpic/showergel.jpg')} 
        style={{ width: 142, height: 200,  alignSelf: 'center',margin:15 ,padding:2, borderRadius:10,}}/>
 <Text style={{ fontSize:15,   alignSelf: 'center',fontWeight:'500', color:'black'}}   >
-Women Shoe
+Shower Gel
 </Text>
 
 
@@ -207,10 +207,10 @@ Women Shoe
 
 <TouchableOpacity  style={{backgroundColor:'white' ,borderWidth:1, borderRadius:20, borderColor:'white',elevation:10,
    }}   onPress={()=>navigation.push('Buy House') }  >
-<Image source={require('../nekpic/wcream.jpg')} 
+<Image source={require('../nekpic/soap.jpg')} 
        style={{ width: 142, height: 200,  alignSelf: 'center',margin:15 ,padding:2, borderRadius:10,}}/>
 <Text style={{ fontSize:15,   alignSelf: 'center',fontWeight:'500', color:'black'}}   >
-  Women Body Lotion
+Soap
 </Text>
 
 
@@ -221,10 +221,10 @@ Women Shoe
 
 <TouchableOpacity  style={{backgroundColor:'white' ,borderWidth:1, borderRadius:20, borderColor:'white',elevation:10,
    }} onPress={()=>navigation.push('rent a Shop') } >
-<Image source={require('../nekpic/mcream.jpg')} 
+<Image source={require('../nekpic/bodybutter.jpg')} 
        style={{ width: 142, height: 200,  alignSelf: 'center',margin:15 ,padding:2, borderRadius:10,}}/>
 <Text style={{ fontSize:15,   alignSelf: 'center',fontWeight:'500', color:'black'}}   >
-Men Body Lotion
+Body Butter
 </Text>
 
 
@@ -257,10 +257,10 @@ Sold Out Houses!
 
 <TouchableOpacity  style={{backgroundColor:'white' ,borderWidth:1, borderRadius:20, borderColor:'white',elevation:10,
    }}   onPress={()=>navigation.push('Sold Houses') }  >
-<Image source={require('../nekpic/wig.jpg')} 
+<Image source={require('../nekpic/kidproducts.jpg')} 
        style={{ width: 142, height: 200,  alignSelf: 'center',margin:15 ,padding:2, borderRadius:10,}}/>
 <Text style={{ fontSize:15,   alignSelf: 'center',fontWeight:'500', color:'black'}}   >
-Wig
+Kids Products
 </Text>
 
 
@@ -271,10 +271,10 @@ Wig
 
 <TouchableOpacity  style={{backgroundColor:'white' ,borderWidth:1, borderRadius:20, borderColor:'white',elevation:10,
    }} onPress={()=>navigation.push('Sold Lands') } >
-<Image source={require('../nekpic/wbag.jpg')}  
+<Image source={require('../nekpic/hair.jpg')}  
        style={{ width: 142, height: 200,  alignSelf: 'center',margin:15 ,padding:2, borderRadius:10,}}/>
 <Text style={{ fontSize:15,   alignSelf: 'center',fontWeight:'500', color:'black'}}   >
-Women Hand Bag
+Hair Product
 </Text>
 
 
@@ -309,10 +309,10 @@ Sold Out Houses!
 
 <TouchableOpacity  style={{backgroundColor:'white' ,borderWidth:1, borderRadius:20, borderColor:'white',elevation:10,
    }}   onPress={()=>navigation.push('Buy A Car') }  >
-<Image source={require('../nekpic/car2.jpg')} 
+<Image source={require('../nekpic/flattummy.jpg')} 
        style={{ width: 142, height: 200,  alignSelf: 'center',margin:15 ,padding:2, borderRadius:10,}}/>
 <Text style={{ fontSize:15,   alignSelf: 'center',fontWeight:'500', color:'black'}}   >
-Selling Cars
+Flat Tummy Set
 </Text>
 
 

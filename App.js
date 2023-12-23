@@ -47,6 +47,9 @@ import SearchPreferences from  './screens/settings/SearchPreferences';
 import ForgotPasswordScreen  from './screens/ForgotPasswordScreen';
 import DeleteUserAccount  from './screens/settings/DeleteUserAccount';
 import 'react-native-screens';
+import BodyCream from './products/BuyHouseList'
+
+
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 const Stack = createNativeStackNavigator();
 
@@ -127,7 +130,7 @@ export default function App() {
 
 
  <Stack.Screen name="Register" component={Register}/>
-
+ <Stack.Screen name="BodyCream" component={BodyCream}/>
  {/* <Stack.Screen name="Buy A Car" component={BuyCarList}/> */}
 
  {/* <Stack.Screen name="HomePage" component={HomePage} styles={{backgroundColor:'blue'}}   ScreenOptions={{HeaderShown:false}}  /> */}
